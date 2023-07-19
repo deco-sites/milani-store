@@ -1,11 +1,11 @@
-import Searchbar from "$store/islands/HeaderSearchbar.tsx";
-import Buttons from "$store/islands/HeaderButton.tsx";
+import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-import NavItem from "./NavItem.tsx";
-import { navbarHeight } from "./constants.ts";
+import Buttons from "$store/islands/HeaderButton.tsx";
+import Searchbar from "$store/islands/HeaderSearchbar.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { INavItem } from "./NavItem.tsx";
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
+import NavItem from "./NavItem.tsx";
+import { navbarHeight } from "./constants.ts";
 
 function Navbar({ items, searchbar, logo }: {
   items: INavItem[];
@@ -28,7 +28,7 @@ function Navbar({ items, searchbar, logo }: {
             style={{ minHeight: navbarHeight }}
             aria-label="Store logo"
           >
-            <Image src={logo.src} alt={logo.alt} width={126} height={16} />
+            <Image src={logo.src} alt={logo.alt} width={183} height={61} />
           </a>
         )}
 
@@ -47,7 +47,7 @@ function Navbar({ items, searchbar, logo }: {
               aria-label="Store logo"
               class="block px-4 py-3 w-[160px]"
             >
-              <Image src={logo.src} alt={logo.alt} width={126} height={16} />
+              <Image src={logo.src} alt={logo.alt} width={183} height={61} />
             </a>
           )}
         </div>

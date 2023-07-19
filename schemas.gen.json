@@ -9839,6 +9839,10 @@
             "alt"
           ],
           "title": "Logo"
+        },
+        "links": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9taWxhbmktc3RvcmUvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@NavItem[]",
+          "title": "Links"
         }
       },
       "required": [
